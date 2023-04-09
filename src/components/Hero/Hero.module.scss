@@ -1,0 +1,101 @@
+@import '../../styles/contants.scss';
+
+.wrapper {
+    overflow: hidden;
+
+
+    .container {
+        position: relative;
+        z-index: 1;
+
+        .upperElements {
+            @media (max-width: $sm) {
+                justify-content: center;
+                text-align: center;
+                gap: 2rem;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+
+        .lowerElements {
+            @media (max-width: $sm), (max-width: $md) {
+              margin-top: 12rem;
+              gap: 2rem;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
+            }
+            margin-top: 12rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          
+            .experience {
+              display: flex;
+              align-items: column;
+              align-items: center;
+              gap: 1rem;
+              >:nth-child(2) {
+                line-height: 20px;
+              }
+            }
+          
+            .certificate {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-top: 2rem;
+          
+              img {
+                display: flex;
+              flex-direction: column;
+              align-items: center;
+                margin-bottom: 1rem;
+                width: 3.5rem;
+              }
+            }
+          }
+          .person {
+            position: absolute;
+            bottom: -5rem;
+            margin: auto;
+            left: 33%;
+    
+            background-image: url("../splash1.png");
+            background-repeat: no-repeat;
+            background-size: 40rem auto 50rem; /* adjust the height to 50rem */
+            background-position: center bottom 0px;
+          
+            img {
+              @media (max-width: $sm ) {
+                width: 30rem;
+              }
+              margin-bottom: -30px;
+            }
+          
+            @media (max-width: $sm ), (max-width: $md) {
+              position: relative;
+              left: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-position: bottom;
+              background-size: 30rem;
+            }
+          }
+        .email {
+            @media (max-width: $sm ) {
+                position: relative;
+                display: none;
+            }
+            position: absolute;
+            top: 50%;
+            left: 0;
+            color: orange;
+        }
+    }
+}
