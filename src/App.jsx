@@ -1,4 +1,4 @@
-import Header from "./Header/Header";
+import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import css from "./styles/app.module.scss"
 import About from "./components/about/About";
