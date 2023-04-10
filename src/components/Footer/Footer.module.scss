@@ -1,0 +1,75 @@
+@import "../../styles/contants.scss";
+
+.container {
+  gap: 2rem;
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .left {
+    flex: 3;
+
+    > * {
+      display: block;
+    }
+
+    > :nth-child(2) {
+      margin-top: 3rem;
+
+      a {
+        text-decoration: none; // remove underline
+        color: orange;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+  
+    margin-top: 4rem; // add margin to separate from the previous section
+  
+    .info {
+      margin-bottom: 1rem;
+  
+      > * {
+        display: block;
+      }
+    }
+  
+    .menu {
+      @media (max-width: $sm) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding: 0;
+    
+      li {
+        margin-bottom: 1rem;
+    
+        @media (max-width: $sm) {
+          margin-right: 1rem;
+        }
+    
+        a {
+          cursor: pointer;
+          color: $primary;
+    
+          &:hover {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}

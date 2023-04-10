@@ -3,20 +3,11 @@ import css from "./Header.module.scss";
 import { BiPhoneCall, BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { getMenuStyles, headerVariants } from "../../utils/motion";
-import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
-
-const Header = () => {
-  const menuRef = useRef(null);
-  const [menuOpened, setMenuOpened] = useState(false);
-  const headerShadow = useHeaderShadow();
-
-  //to handle click outside of sidebar on mobile
-  useOutsideAlerter({
-    menuRef,
-    setMenuOpened,
-  });
-
+  const Header = () => {
+    const menuRef = useRef(null);
+    const [menuOpened, setMenuOpened] = useState(false);
+    const headerShadow = useHeaderShadow();
   return (
     <motion.div
       variants={headerVariants}
@@ -30,12 +21,13 @@ const Header = () => {
         <div className={css.name}>狄亞志</div>
         <ul
           className={`flexCenter ${css.menu}`}
-          ref={menuRef}
+          
           style={getMenuStyles(menuOpened)}
         >
-          <li><a href="#About">About</a></li>
-          <li><a href="#Education">Education</a></li>
-          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#about">Education</a></li>
+          <li><a href="#work">Work Experience</a></li>
+          <li><a href="#work"></a></li>
           <li><a href="#portfolio">portfolio</a></li>
           <li className={`flexCenter ${css.phone}`}>
             <p>0978548735</p>
@@ -43,8 +35,8 @@ const Header = () => {
           </li>
         </ul>
 
-        {/* for medium and small screens */}
-        <div
+           {/* for medium and small screens */}
+           <div
           className={css.menuIcon}
           onClick={() => setMenuOpened((prev) => !prev)}
         >
