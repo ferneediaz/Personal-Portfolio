@@ -22,7 +22,7 @@
 
 
         .lowerElements {
-            @media (max-width: $sm), (max-width: $md) {
+            @media (max-width: $sm) and (max-width: $md) {
               margin-top: 12rem;
               gap: 2rem;
               justify-content: center;
@@ -72,30 +72,34 @@
           
             img {
               @media (max-width: $sm ) {
-                width: 30rem;
+                width: 18rem;
               }
               margin-bottom: -30px;
             }
           
-            @media (max-width: $sm ), (max-width: $md) {
+            @media (max-width: $sm ) and (max-width: $md) {
               position: relative;
               left: 0;
               display: flex;
               align-items: center;
               justify-content: center;
               background-position: bottom;
-              background-size: 30rem;
+              background-size: 20rem;
+              
             }
           }
         .email {
+          color: orange;
             @media (max-width: $sm ) {
                 position: relative;
                 display: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: orange;
+                margin-top: 140px;
             }
-            position: absolute;
-            top: 50%;
-            left: 0;
-            color: orange;
+           
         }
     }
 }
