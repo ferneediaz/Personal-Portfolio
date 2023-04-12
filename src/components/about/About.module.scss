@@ -1,5 +1,4 @@
 @import "../../styles/contants.scss";
-
 .wrapper {
     background: white;
   
@@ -68,20 +67,13 @@
         }
       }
   
-      @media (max-width: $sm) {
-        flex-direction: column;
+      @media (max-width: $xs) {
+        flex-direction: row;
   
         .leftSide,
         .rightSide {
           width: 100%;
         }
-      }
-    }
-  
-    /* New rule to override flex-direction on mobile devices */
-    @media (max-width: $sm) {
-      .container {
-        flex-direction: row;
       }
     }
   }
