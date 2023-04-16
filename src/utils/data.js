@@ -31,8 +31,8 @@ export const projectExperience = [
 ];
 
 export const AboutMe = [
-  "Hello, my name is Dan in english and 狄亞志 in chinese. When i was a child, I stumbled upon the inspect element button in my browser, and that was the moment that sparked my passion for software. In 2017, I enrolled in a program in Information Communication Technology, which was my first formal education in software. Which Led me to pursue a degree in Mechatronic Engineering in college, Since then I've been self-learning web development, honing my skills and gaining experience in this exciting field..",
-  "I am dedicated to keeping myself up-to-date with the latest trends and techniques in software development. I strongly believe that my curiosity, creativity, and unwavering dedication will enable me to achieve my goals in this field. Thank you for taking the time to read about my journey in software development,I am excited to collaborate with all of you soon!",
+  "Hello, my name is Dan in English and 狄亞志 in Chinese. When I was a child, I stumbled upon the inspect element button in my browser, and that was the moment that sparked my passion for software. In 2017, I enrolled in a program in Information Communication Technology, which was my first formal education in software. Which Led me to pursue a degree in Mechatronic Engineering in college, Since then I've been self-learning web development, honing my skills, and gaining experience in this exciting field..",
+  "I am dedicated to keeping myself up-to-date with the latest trends and techniques in software development. I strongly believe that my curiosity, creativity, and unwavering dedication will enable me to achieve my goals in this field. Thank you for taking the time to read about my journey in software development, I am excited to collaborate with all of you soon!",
 ];
 
 export const workExp = [
