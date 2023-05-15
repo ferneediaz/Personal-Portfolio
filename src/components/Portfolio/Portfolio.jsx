@@ -59,7 +59,7 @@ const Portfolio = () => {
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              openLinkInNewTab("https://github.com/ferneediaz/FREEFLOW");
+              openLinkInNewTab("https://github.com/ferneediaz/Get-Food");
             }}
           >
             <motion.img
