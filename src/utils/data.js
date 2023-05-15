@@ -31,8 +31,9 @@ export const projectExperience = [
 ];
 
 export const AboutMe = [
-  "Hello, my name is Dan in English and 狄亞志 in Chinese. When I was a child, I stumbled upon the inspect element button in my browser, and that was the moment that sparked my passion for software. In 2017, I enrolled in a program in Information Communication Technology, which was my first formal education in software. Which Led me to pursue a degree in Mechatronic Engineering in college, Since then I've been self-learning web development, honing my skills, and gaining experience in this exciting field..",
-  "I am dedicated to keeping myself up-to-date with the latest trends and techniques in software development. I strongly believe that my curiosity, creativity, and unwavering dedication will enable me to achieve my goals in this field. Thank you for taking the time to read about my journey in software development, I am excited to collaborate with all of you soon!",
+  "Hi, I'm Dan (狄亞志), an engineer who thrives on creating innovative applications. My passion for software development sparked at a young age when I accidentally stumbled upon the inspect element button in my browser. This discovery fascinated me, as I realized I could modify the appearance and behavior of websites. It prompted me to delve deeper into web development and learn about the intricacies of building websites.",
+  "During my childhood, I had fun pranking my family with web pages and creating fake login pages for social media platforms. It was interesting to see how usernames and passwords appeared in the URL because HTTPS wasn't widely used back then. This curiosity led me to pursue a program in Information Communication Technology, which I studied for two years in the Philippines",
+  "I'm passionate about using software to solve real-world problems. I believe that software has the power to make our lives easier, more efficient, and more enjoyable. I'm always looking for new challenges and opportunities to learn and grow.",
 ];
 
 export const workExp = [
